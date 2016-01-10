@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.controller.RoomController">
+   <right>
+      <GridPane prefHeight="400.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="129.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="503.0" minHeight="10.0" prefHeight="502.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="leaderInfo" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ListView fx:id="playerList" onMouseClicked="#handlePlayerListClick" prefHeight="411.0" prefWidth="180.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </GridPane.margin></ListView>
+         </children>
+      </GridPane>
+   </right>
+   <left>
+      <GridPane prefHeight="531.0" prefWidth="495.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="121.0" minHeight="9.0" prefHeight="65.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="474.0" minHeight="5.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="474.0" minHeight="10.0" prefHeight="188.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="474.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="474.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="172.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="mainActionButton" onAction="#handleMainActionButtonClicked" mnemonicParsing="false" text="Czekaj na koniec tury przeciwnika" textFill="#909090" GridPane.rowIndex="5" />
+            <GridPane prefHeight="17.0" prefWidth="495.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="331.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="164.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text fx:id="gameInfo" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="currentPlayerInfo" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Text fx:id="opponentDiceOverheadText" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.rowIndex="1" />
+            <Text fx:id="ownDiceOverheadText" strokeType="OUTSIDE" strokeWidth="0.0" text="Twoje kości" GridPane.rowIndex="3" />
+            <fx:include fx:id="opponentDiceDisplay" source="dieDisplay.fxml" GridPane.rowIndex="2" />
+            <fx:include fx:id="ownDiceDisplay" source="dieDisplay.fxml" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </left>
+</BorderPane>

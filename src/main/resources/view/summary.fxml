@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.controller.SummaryController">
+   <center>
+      <GridPane prefHeight="400.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="playerList" prefHeight="469.0" prefWidth="655.0">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </GridPane.margin></ListView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </center>
+   <top>
+       <GridPane prefHeight="87.0" prefWidth="685.0" BorderPane.alignment="CENTER">
+           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Koniec gry">
+               <font>
+                   <Font name="System Bold" size="25.0" />
+               </font>
+           </Text>
+           <Text fx:id="gameResult" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.rowIndex="1">
+               <font>
+                   <Font name="System Bold" size="12.0" />
+               </font>
+           </Text>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         </rowConstraints>
+       </GridPane>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#handleContinueButtonClicked" text="Kontynuuj" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+    
+</BorderPane>

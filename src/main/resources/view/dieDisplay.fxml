@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.controller.DiceDisplayController">
+    <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints maxHeight="474.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+     <children>
+        <Canvas fx:id="canvas0" visible="false" height="64.0" onMouseClicked="#handleSelect" width="64.0" GridPane.columnIndex="0" />
+        <Canvas fx:id="canvas4" visible="false" height="64.0" layoutX="10.0" layoutY="20.0" onMouseClicked="#handleSelect" width="64.0" GridPane.columnIndex="4" />
+        <Canvas fx:id="canvas3" visible="false" height="64.0" layoutX="10.0" layoutY="20.0" onMouseClicked="#handleSelect" width="64.0" GridPane.columnIndex="3" />
+        <Canvas fx:id="canvas2" visible="false" height="64.0" layoutX="10.0" layoutY="20.0" onMouseClicked="#handleSelect" width="64.0" GridPane.columnIndex="2" />
+        <Canvas fx:id="canvas1" visible="false" height="64.0" layoutX="10.0" layoutY="20.0" onMouseClicked="#handleSelect" width="64.0" GridPane.columnIndex="1" />
+     </children>
+</GridPane>

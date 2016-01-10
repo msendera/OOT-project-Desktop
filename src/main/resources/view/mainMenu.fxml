@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane prefHeight="291.0" prefWidth="529.0" fx:id="mainMenu" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.controller.MainMenuController">
+   <tabs>
+      <Tab text="N+">
+         <content>
+            <fx:include fx:id="nPlus" source="gameListPane.fxml"/>
+         </content>
+      </Tab>
+      <Tab  text="Poker">
+         <content>
+            <fx:include fx:id="poker" source="gameListPane.fxml"/>
+         </content>
+      </Tab>
+      <Tab  text="N*">
+         <content>
+            <fx:include fx:id="nProduct" source="gameListPane.fxml"/>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
