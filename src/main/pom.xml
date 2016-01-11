@@ -18,6 +18,14 @@
     </build>
 
     <dependencies>
+
+        <dependency>
+            <groupId>lib</groupId>
+            <artifactId>ClientAPI</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ClientAPI-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
         <dependency>
             <groupId>lib</groupId>
             <artifactId>ClientAPI</artifactId>
