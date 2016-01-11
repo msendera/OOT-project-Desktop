@@ -13,8 +13,7 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
-import to2.ds.api.Client;
-import to2.ds.api.Connector;
+import to2.ds.api.*;
 
 import javax.websocket.DeploymentException;
 import java.io.IOException;
